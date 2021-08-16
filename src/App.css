@@ -8,3 +8,12 @@
 .local_stream{
   border-radius: 4vh;
 }
+
+.meeting-icons{
+  width: 7vh;
+  background: white;
+  height: 7vh;
+  border-radius: 2vh;
+  text-align: center;
+  padding: 1vh; 
+}

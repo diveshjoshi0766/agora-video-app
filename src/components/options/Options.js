@@ -63,7 +63,7 @@ function mute_user() {
   sendActionMessageToChannel({type: "MUTE_USER", id: `${localStorage.getItem("2")}`})
 }
 
-function mute_video() {
+function camera_off_user() {
   sendActionMessageToChannel({type: "CAMERA_OFF_USER", id: `${localStorage.getItem("2")}`})
   sendActionMessageToChannel({type: "CAMERA_OFF_USER", id: `${localStorage.getItem("3")}`})
   sendActionMessageToChannel({type: "CAMERA_OFF_USER", id: `${localStorage.getItem("4")}`})
@@ -151,16 +151,9 @@ function mute_video() {
           />
           </div>
 
-          <div className={"meeting-icons"}>
-          <FontAwesomeIcon 
-            icon={faGripVertical} 
-            onClick={exit}
-          />
-          </div>
 
-          <div
+          {/* <div
             className={"meeting-icons active"}>
-            {/* MUTE_USER */}
           <FontAwesomeIcon 
             onClick={mute_user}
             icon={faVolumeMute} 
@@ -168,12 +161,11 @@ function mute_video() {
           </div>
           <div
             className={"meeting-icons active"}>
-            {/* MUTE_USER */}
           <FontAwesomeIcon 
-            onClick={mute_video}
+            onClick={camera_off_user}
             icon={faVideoSlash} 
           />
-          </div>
+          </div> */}
           <div className="meeting-icons" id="chat-box">
           <Chat></Chat>
           </div>

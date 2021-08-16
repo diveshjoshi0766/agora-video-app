@@ -16,11 +16,6 @@ function App() {
     localStorage.setItem("8", Randomstring.generate());
     localStorage.setItem("9", Randomstring.generate());
     localStorage.setItem("10", Randomstring.generate());
-    // localStorage.setItem("6", JSON.stringify(`${Randomstring.generate()}`));
-    // localStorage.setItem("7", JSON.stringify(`${Randomstring.generate()}`));
-    // localStorage.setItem("8", JSON.stringify(`${Randomstring.generate()}`));
-    // localStorage.setItem("9", JSON.stringify(`${Randomstring.generate()}`));
-    // localStorage.setItem("10", JSON.stringify(`${Randomstring.generate()}`));
   }, []);
 
   return (

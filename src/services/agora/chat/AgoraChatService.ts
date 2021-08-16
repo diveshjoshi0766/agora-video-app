@@ -29,10 +29,6 @@ console.log(uid)
 count++;
 const channel: RtmChannel = client.createChannel("demoChannel");
 
-const addChatBox = (message: any) => {
-  const msg: any = document.getElementById("msg")
-  msg.appendChild(document.createElement('div')).append(message)
-}
 
 export const initChat = async () => {
   client.on("ConnectionStateChanged", (state, reason) => {
@@ -58,21 +54,28 @@ export const initChat = async () => {
   registerListeners();
   await getAllMembers();
 };
-// export var chatMessages: any
-// export var chatMessagesFrom: any
 
 export const sendChannelMessage = async (message: any) => {
-  // const elementToSend =  React.createElement(
-  //   "div",
-  //   {style: {color: "red"}, id: "messageFromChannel", className: "ChannelMessageClass"},
-  //   "hello",
-  //   )
 
-  //   ReactDOM.render(React.createElement(elementToSend), document.getElementsByClassName("msg")) 
+  var d = new Date(); // for now
+  d.getHours(); // => 9
+  d.getMinutes(); // =>  30
+  d.getSeconds(); // => 51
 
   const someElement = document.querySelector(".msg");
   someElement?.appendChild(document.createElement('div')).append(message)
+
 }
+
+
+export const sendMediaMessage = async (message: any) => {
+
+  const someElement = document.querySelector(".msg");
+  someElement?.appendChild(document.createElement('div')).append(message)
+
+}
+
+
 
 
 export const sendMessageToChannel = async (message: any) => {

@@ -32,8 +32,8 @@ const Messenger = () => {
   };
 
   const handleFileSubmit = (e) => {
-    sendFileMessageToChannel(`${msg}`, e.target.files)
     console.log(msg + " " + e.target.files)
+    sendFileMessageToChannel(`${msg}`, e.target.files)
   }
 
   const upload = (e) => {
@@ -72,7 +72,7 @@ const Messenger = () => {
           onClick={handleSendMsg}
         />
         {/* <i class="fas fa-file-code icon"><input type="file" onChange={(e) => upload(e)} name="img"></input></i> */}
-        <input type="file" onChange={(e) => upload(e)} onClick={(e) => handleFileSubmit(e)}></input>
+        {/* <input type="file" onChange={(e) => upload(e)} onClick={(e) => handleFileSubmit(e)}></input> */}
       </div>
     </div>
   );
