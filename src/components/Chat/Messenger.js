@@ -42,16 +42,15 @@ const Messenger = () => {
 
   var chatMessageCount = 0;
   return (
-    <div className="messenger-container" style={{borderRadius: "4vh"}}>
+    <div className="messenger-container" style={{height: "100vh", width: "48.3vh"}}>
 
-      <div className="messenger-header-tabs">
-        <div className="tab">
-          <FontAwesomeIcon className="icon" icon={faCommentAlt} />
+      <div className="messenger-header-tabs" style={{backgroundColor: "rgb(238 240 244)", backgroundImage: "linear-gradient(486deg, #ffffff 4%, #dcdee0 74%)"}}>
+        <div className="tab" style={{backgroundColor: "rgb(238 240 244)",fontWeight: "700", margin: "2vh", backgroundImage: "linear-gradient(486deg, #ffffff 4%, #dcdee0 74%)"}}>
           <p>Chat</p>
         </div>
       </div>
 
-      <div className="chat-section">
+      <div className="chat-section" style={{backgroundColor: "rgb(238 240 244)", backgroundImage: "linear-gradient(486deg, #ffffff 4%, #dcdee0 74%)"}}>
           <div key={chatMessageCount++} className="chat-block">
             <div className="sender">
             </div>
@@ -59,12 +58,13 @@ const Messenger = () => {
           </div> 
       </div>
 
-      <div className="send-msg-section">
+      <div className="send-msg-section" style={{backgroundColor: "rgb(238 240 244)", backgroundImage: "linear-gradient(486deg, #ffffff 4%, #dcdee0 74%)"}}>
         <input
           placeholder="Send a message to everyone"
           value={msg}
           onChange={(e) => handleChangeMsg(e)}
           onKeyDown={(e) => handleKeyDown(e)}
+          style={{backgroundColor: "rgb(238 240 244)", backgroundImage: "linear-gradient(486deg, #ffffff 4%, #dcdee0 74%)"}}
         />
         <FontAwesomeIcon
           className="icon"

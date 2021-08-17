@@ -56,6 +56,7 @@ export const joinChannel = async () => {
           id: id,
           mediaType: "video",
           videoStatus: false,
+          
         })
       : dispatchStreamStatusChange({
           id: id,
@@ -127,6 +128,7 @@ const subscribe = async (user: any, mediaType: any) => {
       id: user.uid,
       mediaType: "video",
       isLocalClient: false,
+      
     });
   }
   if (mediaType === "audio") {

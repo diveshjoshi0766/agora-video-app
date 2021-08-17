@@ -2,6 +2,7 @@ import './App.css';
 import Options from './components/options/Options';
 import {useEffect} from "react"
 import Randomstring from 'randomstring';
+import Studio from './container/experience/scene/Viewer'
 function App() {
 
 //storing all the demo users in the localstoage 

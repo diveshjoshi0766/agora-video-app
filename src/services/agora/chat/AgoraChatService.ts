@@ -62,9 +62,11 @@ export const sendChannelMessage = async (message: any) => {
   d.getMinutes(); // =>  30
   d.getSeconds(); // => 51
 
-  const someElement = document.querySelector(".msg");
+  const someElement: any = document.querySelector(".msg");
   someElement?.appendChild(document.createElement('div')).append(message)
-
+  // const messageToBeSent: any = someElement.appendChild(document.createElement('div'))
+  // messageToBeSent.className = "messagesFromAgora"
+  // messageToBeSent.append(message)
 }
 
 
@@ -165,7 +167,9 @@ const handleActionMessage = (message: any) => {
       console.log(messageData.id)
       console.log("CAMERA_OFF_USER")
       if (uid === messageData.id) {
+        console.log("here we want the function")
         AgoraVideoService.muteVideoLocalClient();
+        
       }
       break;
   }

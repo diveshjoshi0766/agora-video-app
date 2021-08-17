@@ -10,10 +10,205 @@
 }
 
 .meeting-icons{
-  width: 7vh;
-  background: white;
-  height: 7vh;
-  border-radius: 2vh;
+  width: 47.96px;
+  height: 47.96px;
+  border-radius: 7.99308px;
   text-align: center;
-  padding: 1vh; 
+  background: #ffffff;
+}
+
+.meeting-footer{
+  margin-top: -89px;
+  text-align: right;
+  align-items: inherit;
+  /* right: -162px; */
+  left: 128vh;
+  position: absolute;
+}
+
+.button-mic{
+  position: absolute;
+  width: 21.98px;
+  height: 22.81px;
+  left: 13px;
+  top: 11px;
+  color: white;
+}
+.button-video{
+  position: relative;
+  width: 21.98px;
+  height: 22.81px;
+  left: 2px;
+  top: 11px;
+  color: white;
+}
+.button-screen-share{
+  position: relative;
+  width: 21.98px;
+  height: 22.81px;
+  left: 2vh;
+  top: 11px;
+  color: white;
+}
+.button-signout{
+  position: relative;
+  width: 21.98px;
+  height: 22.81px;
+  left: 2.5vh;
+  color: white;
+  top: 11px;
+}
+.mic-button{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 142vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  position: absolute;
+  background-color: #D62637;
+}
+.video-button{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 132vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  position: absolute;
+  background-color: #D62637;
+  padding-left: 2vh;  
+}
+.screen-share{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 122vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  position: absolute;
+  background-color: #D62637;
+}
+.signout-button{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 102vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  position: absolute;
+  background-color: #D62637;
+}
+.messagesFromAgora{
+  background: #d4d2d2;
+  min-height: 6vh;
+  padding: 2vh;
+  border-radius: 2vh;
+  color: black;
+  margin-top: 2vh;
+}
+.background-color{
+  background-color: #243A7F;
+}
+.background-screen-share{
+  background-color: #243A7F;
+}
+.chat-button{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 112vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #D62637;
+}
+.button-chat{
+  position: relative;
+  width: 21.98px;
+  height: 22.81px;
+  left: 2vh;
+  top: 11px;
+  color: white;
+}
+.active-chat-box{
+  background-color: #243A7F;
+}
+.screen-share-here{
+  margin: 0px;
+  width: 40vh;
+  height: 38vh;
+  display: flex;
+  position: absolute;
+  top: 0vh;
+  left: 40vh;
+}
+.addUser{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 82vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #eeeff1;
+  padding: 2.4vh;
+}
+.button-addUser{
+  color: gray;
+}
+.audioOff{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 92vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #eeeff1;
+  padding: 2.4vh;
+}
+.audioOff-img{
+  padding: 2vh;
+}
+.group{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 72vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #eeeff1;
+  padding: 2.4vh;
+  padding: 2vh;
+}
+.group-img{
+  padding: 2vh;
+}
+.spreadsheet{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 62vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #eeeff1;
+  padding: 2.4vh;
+}
+.spreadsheet-img{
+  padding: 2vh;
+}
+.Vector{
+  height: 47.95845413208008px;
+  width: 47.958454px;
+  right: 52vh;
+  top: 82vh;
+  border-radius: 7.99px;
+  padding-left: 0.5vh;
+  position: absolute;
+  background-color: #eeeff1;
+  padding: 2.4vh;
+  padding: 2vh;
+  text-align: center;
+}
+.Vector-img{
+  padding: 2vh;
 }

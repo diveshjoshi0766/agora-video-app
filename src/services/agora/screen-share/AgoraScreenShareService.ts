@@ -67,7 +67,7 @@ export const startScreenShare = async () => {
 
   if (localTracks !== null) {
     // @ts-ignore
-    localTracks.play("screen-share");
+    localTracks.play("screen-share-here");
   }
 };
 
@@ -79,7 +79,7 @@ const subscribeToScreenShare = async (user: any, mediaType: any) => {
   await client.subscribe(user, mediaType);
   dispatchScreenShare(user.uid);
   if (mediaType === "video") {
-    user.videoTrack.play(`screen-share`);
+    user.videoTrack.play(`screen-share-here`);
   }
   if (mediaType === "audio") {
     user.audioTrack.play();
